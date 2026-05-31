@@ -1,0 +1,6 @@
+date,area,nodes,scale,outcome,lesson
+2026-05-11,conservative adapter multi-seed sweep,3,17 final-config seeds,8 passed offline gates,Check identical dataset digests across nodes and keep the result proposal-only.
+2026-05-12,safety-head distributed evaluation,2,12 seeds and 120 shadow configurations,7 passed internal gates but 0 shadow configurations passed,Internal label gates still need shadow validation.
+2026-05-16,belief-search stability smoke,3,960 games and 52352 search decisions,Completed without crashes,Stability evidence is not a strength result.
+2026-05-17,belief-search night trace collection,3,5400 games and 236802 decision traces,Trace mining succeeded but strength gates failed,Distributed evaluation can produce useful failure data even when a model is rejected.
+2026-05-17,trace and counterfactual collection,3,Concurrent trace shards plus coordinator-side validation,Offline diagnostic collection,Reserve all-node orchestration for shardable workloads.

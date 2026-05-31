@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -45,6 +46,45 @@ class ResearchSnapshotTests(unittest.TestCase):
             self.assertEqual(replay["schema_version"], 1)
             self.assertGreater(len(replay["turns"]), 0)
             self.assertNotIn("hands", json.dumps(replay))
+
+    def test_public_research_ledgers_have_expected_shape(self) -> None:
+        with (ROOT / "research" / "experiment_decisions.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            decisions = list(csv.DictReader(handle))
+        with (ROOT / "research" / "distributed_runs.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            distributed = list(csv.DictReader(handle))
+
+        self.assertGreaterEqual(len(decisions), 10)
+        self.assertGreaterEqual(len(distributed), 5)
+        self.assertGreaterEqual(
+            {row["outcome"] for row in decisions},
+            {"rejected", "correctness_fix"},
+        )
+        self.assertTrue(all(int(row["nodes"]) in {2, 3} for row in distributed))
+
+    def test_public_research_narrative_is_anonymized(self) -> None:
+        paths = [
+            ROOT / "docs" / "ENGINEERING_LESSONS.md",
+            ROOT / "docs" / "DISTRIBUTED_RESEARCH.md",
+            ROOT / "research" / "experiment_decisions.csv",
+            ROOT / "research" / "distributed_runs.csv",
+        ]
+        text = "\n".join(path.read_text(encoding="utf-8") for path in paths)
+
+        prohibited = [
+            r"\b" + "PI" + "NK" + r"\b",
+            r"\b" + "H" + "K" + r"[_-]",
+            r"[A-Za-z]:\\",
+            "/" + "Users/",
+            "remote" + "_jobs",
+            r"\b" + "fi" + "na" + "@",
+            r"\b(?:\d{1,3}\.){3}\d{1,3}\b",
+        ]
+        for pattern in prohibited:
+            self.assertIsNone(re.search(pattern, text, flags=re.IGNORECASE))
 
 
 if __name__ == "__main__":

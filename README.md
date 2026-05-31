@@ -17,7 +17,10 @@ machine-specific configuration are intentionally excluded.
 The public snapshot also includes a sanitized research archive: selected
 paired-gate records from the pre-public development history, aggregate results,
 and shareable replay examples. See [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md)
-and [research/README.md](research/README.md).
+and [research/README.md](research/README.md). The selected failed routes and the
+anonymized three-computer workflow are documented in
+[docs/ENGINEERING_LESSONS.md](docs/ENGINEERING_LESSONS.md) and
+[docs/DISTRIBUTED_RESEARCH.md](docs/DISTRIBUTED_RESEARCH.md).
 
 ## Why Guandan?
 

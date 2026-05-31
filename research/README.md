@@ -7,6 +7,10 @@ pre-public evaluation history.
 
 - `selected_gate_results.csv`: one aggregate row per selected historical gate.
 - `gates/*.csv`: sanitized per-game records for eight paired gates.
+- `experiment_decisions.csv`: a selected ledger of rejected shortcuts,
+  correctness fixes, and lessons retained by the project.
+- `distributed_runs.csv`: anonymized aggregate evidence from shardable
+  multi-computer experiments.
 
 The snapshot contains 1,280 game rows from April 28-29, 2026. It covers direct
 policy comparisons and two early public-information search gates.

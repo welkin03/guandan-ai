@@ -1,0 +1,15 @@
+date,area,attempt,outcome,evidence,lesson
+2026-04-28,policy,self-play release gate,rejected,85/15 team-seat skew in 100 games,Always use paired seat-swapped gates.
+2026-04-29,value,random row split,rejected,Adjacent states from the same game leaked across the validation split,Split by whole game or session.
+2026-04-29,search,candidate pruner,rejected,The larger gate reached 21/40 wins versus 26/40 without pruning,Offline recall and tiny smoke checks are not release evidence.
+2026-05-03,policy,narrow human-loss fine-tuning,rejected,A small corrective set regressed against retained older opponents,Keep older policies in the regression pool.
+2026-05-09,team-q,direct candidate reranking,rejected,Offline ranking signal did not survive gameplay gates,Use Team-Q as diagnostic evidence before runtime control.
+2026-05-12,safety,global rejection threshold,rejected,120 model and threshold shadow configurations produced 0 passing gates,Use state-class context instead of one global threshold.
+2026-05-16,guard,action-shape hard veto,rejected,Refined CF32 slice contained 9 negative / 3 neutral / 6 positive examples,Use mixed slices for mining rather than blunt runtime rules.
+2026-05-16,search,remote smoke without decision traces,diagnostic_only,960-game stability smoke could not reconstruct a per-decision dataset,Emit trace rows and progress at source.
+2026-05-17,data,external replay adaptation,diagnostic_only,The 1000-episode audit found 134202 replay-ready rows and 182 rule-difference failures,Replay-audit external rows before relabeling.
+2026-05-29,training,return-only policy gradient,rejected,1200 games reduced one old exact-retention metric from 1.000 to 0.460,More volume cannot fix noisy credit assignment alone.
+2026-05-29,training,small all-legal direct neural model,rejected,It scored 0/8 against two retained opponents,Strengthen the search teacher before distillation.
+2026-05-31,search,all-legal root implementation,correctness_fix,Removing an accidental root top-28 cap changed one paired smoke gate from 3/6 to 6/6,Root and internal-node width controls need separate semantics.
+2026-05-31,labels,exact tie handling,correctness_fix,Three apparent changed labels became 3 stable / 0 changed after tie repair,Do not manufacture labels from exact ties.
+2026-05-31,search,global q-based root decision,rejected,Cross-opponent regressions appeared in larger paired gates,Use q-conflict rows for mining rather than global replacement.
