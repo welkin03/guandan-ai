@@ -1,0 +1,9 @@
+date,category,candidate,opponent,games,wins,win_rate,seat_gap,average_score,file,notes
+2026-04-28,direct,v7,v5,400,308,0.770,0.030,1.393,gates/direct_v7_vs_v5.csv,Paired direct-policy release gate.
+2026-04-28,direct,v7,v6,400,305,0.762,0.045,1.373,gates/direct_v7_vs_v6.csv,Paired direct-policy release gate.
+2026-04-29,search,v7-plus-search,v7-direct,40,26,0.650,0.200,0.400,gates/search_v7_plus_search_vs_v7_direct.csv,Belief-root search smoke gate.
+2026-04-29,direct,v8-searchmix,v7,200,135,0.675,0.030,0.740,gates/direct_v8_searchmix_vs_v7.csv,Search-label policy release gate.
+2026-04-29,search,v8-searchmix-plus-search,v7-direct,20,14,0.700,0.000,0.850,gates/search_v8_searchmix_plus_search_vs_v7_direct.csv,Search-stack smoke gate.
+2026-04-29,direct,v9-broad-hard,v8-searchmix,100,60,0.600,0.000,0.330,gates/direct_v9_broad_hard_vs_v8_searchmix.csv,Hard-example policy release gate.
+2026-04-29,direct,v10-selfplay,v9-broad-hard,60,33,0.550,0.233,0.067,gates/direct_v10_selfplay_vs_v9_broad_hard.csv,Self-play search-label policy gate.
+2026-04-29,direct,v11-guard-aligned,v10-selfplay,60,37,0.617,0.233,0.567,gates/direct_v11_guard_aligned_vs_v10_selfplay.csv,Guard-aligned policy gate.

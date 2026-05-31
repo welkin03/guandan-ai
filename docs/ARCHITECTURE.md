@@ -14,6 +14,8 @@ support several AI approaches without requiring private training artifacts.
 | `hand_eval.py` | Lightweight hand-shape and turn-count estimates |
 | `policy.py` | Heuristic baseline and tactical guards |
 | `replay.py` | Public JSON replay serialization |
+| `research/` | Sanitized historical gate records and aggregates |
+| `examples/replays/` | Shareable public self-play traces |
 
 ## Research Direction
 

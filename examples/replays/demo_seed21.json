@@ -1,0 +1,4079 @@
+{
+  "schema_version": 1,
+  "game": "guandan",
+  "seed": 21,
+  "rule_config": {
+    "level_rank": "2",
+    "wild_suit": "H"
+  },
+  "initial": {
+    "current_player": 0,
+    "last_actor": null,
+    "last_action": null,
+    "consecutive_passes": 0,
+    "hand_sizes": [
+      27,
+      27,
+      27,
+      27
+    ],
+    "finished": []
+  },
+  "turns": [
+    {
+      "turn": 1,
+      "player": 0,
+      "action": {
+        "type": "straight",
+        "cards": [
+          "SA",
+          "D2",
+          "S3",
+          "H2",
+          "S5"
+        ],
+        "main_rank": "5",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          27,
+          27,
+          27,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "SA",
+            "D2",
+            "S3",
+            "H2",
+            "S5"
+          ],
+          "main_rank": "5",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          27,
+          27,
+          27
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 2,
+      "player": 1,
+      "action": {
+        "type": "straight",
+        "cards": [
+          "HT",
+          "HJ",
+          "CQ",
+          "CK",
+          "SA"
+        ],
+        "main_rank": "A",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "SA",
+            "D2",
+            "S3",
+            "H2",
+            "S5"
+          ],
+          "main_rank": "5",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          27,
+          27,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "HT",
+            "HJ",
+            "CQ",
+            "CK",
+            "SA"
+          ],
+          "main_rank": "A",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 3,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "HT",
+            "HJ",
+            "CQ",
+            "CK",
+            "SA"
+          ],
+          "main_rank": "A",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "HT",
+            "HJ",
+            "CQ",
+            "CK",
+            "SA"
+          ],
+          "main_rank": "A",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 4,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "HT",
+            "HJ",
+            "CQ",
+            "CK",
+            "SA"
+          ],
+          "main_rank": "A",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 1,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "HT",
+            "HJ",
+            "CQ",
+            "CK",
+            "SA"
+          ],
+          "main_rank": "A",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 5,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 1,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "HT",
+            "HJ",
+            "CQ",
+            "CK",
+            "SA"
+          ],
+          "main_rank": "A",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 6,
+      "player": 1,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "S3",
+          "H3",
+          "H3",
+          "S4",
+          "D4"
+        ],
+        "main_rank": "3",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          22,
+          27,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S3",
+            "H3",
+            "H3",
+            "S4",
+            "D4"
+          ],
+          "main_rank": "3",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          17,
+          27,
+          27
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 7,
+      "player": 2,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "D6",
+          "H6",
+          "S6",
+          "CA",
+          "HA"
+        ],
+        "main_rank": "6",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S3",
+            "H3",
+            "H3",
+            "S4",
+            "D4"
+          ],
+          "main_rank": "3",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          17,
+          27,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "D6",
+            "H6",
+            "S6",
+            "CA",
+            "HA"
+          ],
+          "main_rank": "6",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          17,
+          22,
+          27
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 8,
+      "player": 3,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "CJ",
+          "SJ",
+          "HJ",
+          "C4",
+          "C4"
+        ],
+        "main_rank": "J",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "D6",
+            "H6",
+            "S6",
+            "CA",
+            "HA"
+          ],
+          "main_rank": "6",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          17,
+          22,
+          27
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CJ",
+            "SJ",
+            "HJ",
+            "C4",
+            "C4"
+          ],
+          "main_rank": "J",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          17,
+          22,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 9,
+      "player": 0,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "D7",
+          "H7",
+          "H2",
+          "DQ",
+          "SQ"
+        ],
+        "main_rank": "Q",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CJ",
+            "SJ",
+            "HJ",
+            "C4",
+            "C4"
+          ],
+          "main_rank": "J",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          22,
+          17,
+          22,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "D7",
+            "H7",
+            "H2",
+            "DQ",
+            "SQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          17,
+          22,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 10,
+      "player": 1,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "S2",
+          "C2",
+          "C2",
+          "S8",
+          "C8"
+        ],
+        "main_rank": "2",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "D7",
+            "H7",
+            "H2",
+            "DQ",
+            "SQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          17,
+          22,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S2",
+            "C2",
+            "C2",
+            "S8",
+            "C8"
+          ],
+          "main_rank": "2",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 11,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S2",
+            "C2",
+            "C2",
+            "S8",
+            "C8"
+          ],
+          "main_rank": "2",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S2",
+            "C2",
+            "C2",
+            "S8",
+            "C8"
+          ],
+          "main_rank": "2",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 12,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S2",
+            "C2",
+            "C2",
+            "S8",
+            "C8"
+          ],
+          "main_rank": "2",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S2",
+            "C2",
+            "C2",
+            "S8",
+            "C8"
+          ],
+          "main_rank": "2",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 13,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S2",
+            "C2",
+            "C2",
+            "S8",
+            "C8"
+          ],
+          "main_rank": "2",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 14,
+      "player": 1,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "HQ",
+          "HQ",
+          "SQ",
+          "CT",
+          "ST"
+        ],
+        "main_rank": "Q",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          12,
+          22,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "HQ",
+            "HQ",
+            "SQ",
+            "CT",
+            "ST"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          22,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 15,
+      "player": 2,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "SK",
+          "DK",
+          "SK",
+          "H5",
+          "D5"
+        ],
+        "main_rank": "K",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "HQ",
+            "HQ",
+            "SQ",
+            "CT",
+            "ST"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          22,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "SK",
+            "DK",
+            "SK",
+            "H5",
+            "D5"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 16,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "SK",
+            "DK",
+            "SK",
+            "H5",
+            "D5"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "SK",
+            "DK",
+            "SK",
+            "H5",
+            "D5"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 17,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "SK",
+            "DK",
+            "SK",
+            "H5",
+            "D5"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "SK",
+            "DK",
+            "SK",
+            "H5",
+            "D5"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 18,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "SK",
+            "DK",
+            "SK",
+            "H5",
+            "D5"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 19,
+      "player": 2,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "C5",
+          "D5",
+          "C5",
+          "S4",
+          "D4"
+        ],
+        "main_rank": "5",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          17,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "C5",
+            "D5",
+            "C5",
+            "S4",
+            "D4"
+          ],
+          "main_rank": "5",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          22
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 20,
+      "player": 3,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "CK",
+          "DK",
+          "HK",
+          "H4",
+          "H4"
+        ],
+        "main_rank": "K",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "C5",
+            "D5",
+            "C5",
+            "S4",
+            "D4"
+          ],
+          "main_rank": "5",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          22
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CK",
+            "DK",
+            "HK",
+            "H4",
+            "H4"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 21,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CK",
+            "DK",
+            "HK",
+            "H4",
+            "H4"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CK",
+            "DK",
+            "HK",
+            "H4",
+            "H4"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 22,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CK",
+            "DK",
+            "HK",
+            "H4",
+            "H4"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CK",
+            "DK",
+            "HK",
+            "H4",
+            "H4"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 23,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "CK",
+            "DK",
+            "HK",
+            "H4",
+            "H4"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 24,
+      "player": 3,
+      "action": {
+        "type": "pair_straight",
+        "cards": [
+          "C8",
+          "D8",
+          "H9",
+          "C9",
+          "DT",
+          "CT"
+        ],
+        "main_rank": "T",
+        "length": 6,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          17
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair_straight",
+          "cards": [
+            "C8",
+            "D8",
+            "H9",
+            "C9",
+            "DT",
+            "CT"
+          ],
+          "main_rank": "T",
+          "length": 6,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 25,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair_straight",
+          "cards": [
+            "C8",
+            "D8",
+            "H9",
+            "C9",
+            "DT",
+            "CT"
+          ],
+          "main_rank": "T",
+          "length": 6,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair_straight",
+          "cards": [
+            "C8",
+            "D8",
+            "H9",
+            "C9",
+            "DT",
+            "CT"
+          ],
+          "main_rank": "T",
+          "length": 6,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 26,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair_straight",
+          "cards": [
+            "C8",
+            "D8",
+            "H9",
+            "C9",
+            "DT",
+            "CT"
+          ],
+          "main_rank": "T",
+          "length": 6,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair_straight",
+          "cards": [
+            "C8",
+            "D8",
+            "H9",
+            "C9",
+            "DT",
+            "CT"
+          ],
+          "main_rank": "T",
+          "length": 6,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 27,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair_straight",
+          "cards": [
+            "C8",
+            "D8",
+            "H9",
+            "C9",
+            "DT",
+            "CT"
+          ],
+          "main_rank": "T",
+          "length": 6,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 28,
+      "player": 3,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "C3",
+          "C3",
+          "D3",
+          "DA",
+          "CA"
+        ],
+        "main_rank": "3",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          11
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "C3",
+            "C3",
+            "D3",
+            "DA",
+            "CA"
+          ],
+          "main_rank": "3",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 29,
+      "player": 0,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "H8",
+          "S8",
+          "H8",
+          "C6",
+          "S6"
+        ],
+        "main_rank": "8",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "C3",
+            "C3",
+            "D3",
+            "DA",
+            "CA"
+          ],
+          "main_rank": "3",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          17,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "H8",
+            "S8",
+            "H8",
+            "C6",
+            "S6"
+          ],
+          "main_rank": "8",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 30,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "H8",
+            "S8",
+            "H8",
+            "C6",
+            "S6"
+          ],
+          "main_rank": "8",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "H8",
+            "S8",
+            "H8",
+            "C6",
+            "S6"
+          ],
+          "main_rank": "8",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 31,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "H8",
+            "S8",
+            "H8",
+            "C6",
+            "S6"
+          ],
+          "main_rank": "8",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "H8",
+            "S8",
+            "H8",
+            "C6",
+            "S6"
+          ],
+          "main_rank": "8",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 32,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "H8",
+            "S8",
+            "H8",
+            "C6",
+            "S6"
+          ],
+          "main_rank": "8",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 33,
+      "player": 0,
+      "action": {
+        "type": "triple_with_pair",
+        "cards": [
+          "S9",
+          "C9",
+          "H9",
+          "C6",
+          "D6"
+        ],
+        "main_rank": "9",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          12,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S9",
+            "C9",
+            "H9",
+            "C6",
+            "D6"
+          ],
+          "main_rank": "9",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 34,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S9",
+            "C9",
+            "H9",
+            "C6",
+            "D6"
+          ],
+          "main_rank": "9",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S9",
+            "C9",
+            "H9",
+            "C6",
+            "D6"
+          ],
+          "main_rank": "9",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 35,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S9",
+            "C9",
+            "H9",
+            "C6",
+            "D6"
+          ],
+          "main_rank": "9",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S9",
+            "C9",
+            "H9",
+            "C6",
+            "D6"
+          ],
+          "main_rank": "9",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 36,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 0,
+        "last_action": {
+          "type": "triple_with_pair",
+          "cards": [
+            "S9",
+            "C9",
+            "H9",
+            "C6",
+            "D6"
+          ],
+          "main_rank": "9",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 37,
+      "player": 0,
+      "action": {
+        "type": "straight",
+        "cards": [
+          "S9",
+          "ST",
+          "DJ",
+          "DQ",
+          "HK"
+        ],
+        "main_rank": "K",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          7,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "S9",
+            "ST",
+            "DJ",
+            "DQ",
+            "HK"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 38,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "S9",
+            "ST",
+            "DJ",
+            "DQ",
+            "HK"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "S9",
+            "ST",
+            "DJ",
+            "DQ",
+            "HK"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 39,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "S9",
+            "ST",
+            "DJ",
+            "DQ",
+            "HK"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "S9",
+            "ST",
+            "DJ",
+            "DQ",
+            "HK"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 40,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 0,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "S9",
+            "ST",
+            "DJ",
+            "DQ",
+            "HK"
+          ],
+          "main_rank": "K",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 41,
+      "player": 0,
+      "action": {
+        "type": "single",
+        "cards": [
+          "S5"
+        ],
+        "main_rank": "5",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          2,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S5"
+          ],
+          "main_rank": "5",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 42,
+      "player": 1,
+      "action": {
+        "type": "single",
+        "cards": [
+          "DA"
+        ],
+        "main_rank": "A",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S5"
+          ],
+          "main_rank": "5",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          7,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "DA"
+          ],
+          "main_rank": "A",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          12,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 43,
+      "player": 2,
+      "action": {
+        "type": "single",
+        "cards": [
+          "D2"
+        ],
+        "main_rank": "2",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "DA"
+          ],
+          "main_rank": "A",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          12,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "D2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          6
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 44,
+      "player": 3,
+      "action": {
+        "type": "single",
+        "cards": [
+          "Y"
+        ],
+        "main_rank": "BJ",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "D2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          6
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 45,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 46,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 47,
+      "player": 2,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 48,
+      "player": 3,
+      "action": {
+        "type": "pair",
+        "cards": [
+          "X",
+          "X"
+        ],
+        "main_rank": "SJ",
+        "length": 2,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          5
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair",
+          "cards": [
+            "X",
+            "X"
+          ],
+          "main_rank": "SJ",
+          "length": 2,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 49,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair",
+          "cards": [
+            "X",
+            "X"
+          ],
+          "main_rank": "SJ",
+          "length": 2,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair",
+          "cards": [
+            "X",
+            "X"
+          ],
+          "main_rank": "SJ",
+          "length": 2,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 50,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair",
+          "cards": [
+            "X",
+            "X"
+          ],
+          "main_rank": "SJ",
+          "length": 2,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair",
+          "cards": [
+            "X",
+            "X"
+          ],
+          "main_rank": "SJ",
+          "length": 2,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 51,
+      "player": 2,
+      "action": {
+        "type": "bomb",
+        "cards": [
+          "D7",
+          "S7",
+          "C7",
+          "C7"
+        ],
+        "main_rank": "7",
+        "length": 4,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 3,
+        "last_action": {
+          "type": "pair",
+          "cards": [
+            "X",
+            "X"
+          ],
+          "main_rank": "SJ",
+          "length": 2,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          11,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "bomb",
+          "cards": [
+            "D7",
+            "S7",
+            "C7",
+            "C7"
+          ],
+          "main_rank": "7",
+          "length": 4,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 52,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "bomb",
+          "cards": [
+            "D7",
+            "S7",
+            "C7",
+            "C7"
+          ],
+          "main_rank": "7",
+          "length": 4,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "bomb",
+          "cards": [
+            "D7",
+            "S7",
+            "C7",
+            "C7"
+          ],
+          "main_rank": "7",
+          "length": 4,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 53,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "bomb",
+          "cards": [
+            "D7",
+            "S7",
+            "C7",
+            "C7"
+          ],
+          "main_rank": "7",
+          "length": 4,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "bomb",
+          "cards": [
+            "D7",
+            "S7",
+            "C7",
+            "C7"
+          ],
+          "main_rank": "7",
+          "length": 4,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 54,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "bomb",
+          "cards": [
+            "D7",
+            "S7",
+            "C7",
+            "C7"
+          ],
+          "main_rank": "7",
+          "length": 4,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 55,
+      "player": 2,
+      "action": {
+        "type": "straight",
+        "cards": [
+          "D8",
+          "D9",
+          "DT",
+          "CJ",
+          "CQ"
+        ],
+        "main_rank": "Q",
+        "length": 5,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          7,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "D8",
+            "D9",
+            "DT",
+            "CJ",
+            "CQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 56,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "D8",
+            "D9",
+            "DT",
+            "CJ",
+            "CQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "D8",
+            "D9",
+            "DT",
+            "CJ",
+            "CQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 57,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "D8",
+            "D9",
+            "DT",
+            "CJ",
+            "CQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "D8",
+            "D9",
+            "DT",
+            "CJ",
+            "CQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 58,
+      "player": 1,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "straight",
+          "cards": [
+            "D8",
+            "D9",
+            "DT",
+            "CJ",
+            "CQ"
+          ],
+          "main_rank": "Q",
+          "length": 5,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 59,
+      "player": 2,
+      "action": {
+        "type": "single",
+        "cards": [
+          "D9"
+        ],
+        "main_rank": "9",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          2,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "D9"
+          ],
+          "main_rank": "9",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          1,
+          3
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 60,
+      "player": 3,
+      "action": {
+        "type": "single",
+        "cards": [
+          "DJ"
+        ],
+        "main_rank": "J",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "D9"
+          ],
+          "main_rank": "9",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          1,
+          3
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "DJ"
+          ],
+          "main_rank": "J",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          1,
+          2
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 61,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "DJ"
+          ],
+          "main_rank": "J",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          6,
+          1,
+          2
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "DJ"
+          ],
+          "main_rank": "J",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          1,
+          2
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 62,
+      "player": 1,
+      "action": {
+        "type": "single",
+        "cards": [
+          "HA"
+        ],
+        "main_rank": "A",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "DJ"
+          ],
+          "main_rank": "J",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          6,
+          1,
+          2
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "HA"
+          ],
+          "main_rank": "A",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          5,
+          1,
+          2
+        ],
+        "finished": []
+      }
+    },
+    {
+      "turn": 63,
+      "player": 2,
+      "action": {
+        "type": "single",
+        "cards": [
+          "S2"
+        ],
+        "main_rank": "2",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 2,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "HA"
+          ],
+          "main_rank": "A",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          5,
+          1,
+          2
+        ],
+        "finished": []
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          5,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 64,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          5,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          5,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 65,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          5,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          5,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 66,
+      "player": 1,
+      "action": {
+        "type": "single",
+        "cards": [
+          "Y"
+        ],
+        "main_rank": "BJ",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": 2,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "S2"
+          ],
+          "main_rank": "2",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 2,
+        "hand_sizes": [
+          1,
+          5,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          4,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 67,
+      "player": 3,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          4,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          4,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 68,
+      "player": 0,
+      "action": {
+        "type": "pass",
+        "cards": [],
+        "main_rank": null,
+        "length": 0,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "Y"
+          ],
+          "main_rank": "BJ",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 1,
+        "hand_sizes": [
+          1,
+          4,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          4,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 69,
+      "player": 1,
+      "action": {
+        "type": "single",
+        "cards": [
+          "D3"
+        ],
+        "main_rank": "3",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 1,
+        "last_actor": null,
+        "last_action": null,
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          4,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "D3"
+          ],
+          "main_rank": "3",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 70,
+      "player": 3,
+      "action": {
+        "type": "single",
+        "cards": [
+          "H7"
+        ],
+        "main_rank": "7",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 3,
+        "last_actor": 1,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "D3"
+          ],
+          "main_rank": "3",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          3,
+          0,
+          2
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "H7"
+          ],
+          "main_rank": "7",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          3,
+          0,
+          1
+        ],
+        "finished": [
+          2
+        ]
+      }
+    },
+    {
+      "turn": 71,
+      "player": 0,
+      "action": {
+        "type": "single",
+        "cards": [
+          "HT"
+        ],
+        "main_rank": "T",
+        "length": 1,
+        "suit": null
+      },
+      "before": {
+        "current_player": 0,
+        "last_actor": 3,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "H7"
+          ],
+          "main_rank": "7",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          1,
+          3,
+          0,
+          1
+        ],
+        "finished": [
+          2
+        ]
+      },
+      "after": {
+        "current_player": 1,
+        "last_actor": 0,
+        "last_action": {
+          "type": "single",
+          "cards": [
+            "HT"
+          ],
+          "main_rank": "T",
+          "length": 1,
+          "suit": null
+        },
+        "consecutive_passes": 0,
+        "hand_sizes": [
+          0,
+          3,
+          0,
+          1
+        ],
+        "finished": [
+          2,
+          0
+        ]
+      }
+    }
+  ],
+  "result": {
+    "finish_order": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "team_scores": {
+      "0": 3,
+      "1": -3
+    }
+  }
+}

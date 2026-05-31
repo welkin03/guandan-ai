@@ -11,8 +11,13 @@ play, trick control, and imperfect information.
 
 This repository is the public core of a larger research project. It is useful
 on its own for rules experiments, baseline agents, and reproducible AI
-prototyping. Training data, model checkpoints, private battle logs, and
+prototyping. Large training datasets, model checkpoints, private battle logs, and
 machine-specific configuration are intentionally excluded.
+
+The public snapshot also includes a sanitized research archive: selected
+paired-gate records from the pre-public development history, aggregate results,
+and shareable replay examples. See [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md)
+and [research/README.md](research/README.md).
 
 ## Why Guandan?
 
@@ -50,6 +55,7 @@ cd guandan-ai
 python -m unittest discover -s tests -v
 python tools/play_demo.py --seed 21
 python tools/play_demo.py --seed 21 --trace demo.json
+python tools/summarize_gate_csv.py research/gates/*.csv
 ```
 
 Use the library directly:
