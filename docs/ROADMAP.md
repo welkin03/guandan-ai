@@ -13,8 +13,8 @@
 
 - [ ] Add configurable tribute and return-card rules
 - [ ] Add more regional rule profiles
-- [ ] Publish a machine-readable game record format
-- [ ] Add replay visualization
+- [x] Publish a machine-readable game record format
+- [x] Add replay visualization
 - [ ] Add reproducible baseline evaluation commands
 - [ ] Add optional belief-sampling and policy-value examples
 

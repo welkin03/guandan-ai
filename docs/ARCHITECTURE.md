@@ -13,6 +13,7 @@ support several AI approaches without requiring private training artifacts.
 | `deal.py` | Deterministic deals and hidden-hand sampling |
 | `hand_eval.py` | Lightweight hand-shape and turn-count estimates |
 | `policy.py` | Heuristic baseline and tactical guards |
+| `replay.py` | Public JSON replay serialization |
 
 ## Research Direction
 

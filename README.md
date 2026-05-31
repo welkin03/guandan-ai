@@ -49,6 +49,7 @@ git clone https://github.com/welkin03/guandan-ai.git
 cd guandan-ai
 python -m unittest discover -s tests -v
 python tools/play_demo.py --seed 21
+python tools/play_demo.py --seed 21 --trace demo.json
 ```
 
 Use the library directly:
@@ -86,7 +87,10 @@ and experimental search stacks are not published as live defaults because they
 need a cleaner release process and reproducible evaluation assets.
 
 See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) and
-[docs/ROADMAP.md](docs/ROADMAP.md) for the next steps.
+[docs/ROADMAP.md](docs/ROADMAP.md) for the next steps. The self-play demo can
+also export a public JSON trace for the dependency-free
+[replay viewer](tools/replay_viewer.html); see
+[docs/REPLAY_FORMAT.md](docs/REPLAY_FORMAT.md).
 
 ## Contributing
 
