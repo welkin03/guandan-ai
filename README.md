@@ -18,7 +18,8 @@ The repository also exposes a sanitized learning track: candidate-action
 policy/value architecture metadata, synthetic training-record examples, and
 milestone ledgers for the policy/value, full-information teacher, and student
 distillation routes. See
-[docs/NEURAL_ARCHITECTURE.md](docs/NEURAL_ARCHITECTURE.md).
+[docs/NEURAL_ARCHITECTURE.md](docs/NEURAL_ARCHITECTURE.md) and
+[docs/TRAINING_JOURNEY.md](docs/TRAINING_JOURNEY.md).
 
 The public snapshot also includes a sanitized research archive: selected
 paired-gate records from the pre-public development history, aggregate results,

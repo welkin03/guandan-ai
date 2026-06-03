@@ -117,6 +117,9 @@ and
 The learning architecture and neural-training route are summarized in
 [`docs/NEURAL_ARCHITECTURE.md`](NEURAL_ARCHITECTURE.md) and
 [`research/neural_training_milestones.csv`](../research/neural_training_milestones.csv).
+A fuller sanitized training chronology is available in
+[`docs/TRAINING_JOURNEY.md`](TRAINING_JOURNEY.md) and
+[`research/training_attempts.csv`](../research/training_attempts.csv).
 
 ## Release Philosophy
 

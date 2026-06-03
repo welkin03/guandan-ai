@@ -60,6 +60,9 @@ The project moved through several learning approaches:
 
 The compact ledger is available at
 [`research/neural_training_milestones.csv`](../research/neural_training_milestones.csv).
+A fuller month-long route ledger is documented in
+[`docs/TRAINING_JOURNEY.md`](TRAINING_JOURNEY.md) and
+[`research/training_attempts.csv`](../research/training_attempts.csv).
 
 ## Why Full-Information Teachers Are Separate
 

@@ -73,17 +73,37 @@ class ResearchSnapshotTests(unittest.TestCase):
             encoding="utf-8", newline=""
         ) as handle:
             neural_milestones = list(csv.DictReader(handle))
+        with (ROOT / "research" / "training_attempts.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            training_attempts = list(csv.DictReader(handle))
 
         self.assertGreaterEqual(len(decisions), 10)
         self.assertGreaterEqual(len(distributed), 6)
         self.assertGreaterEqual(len(teacher_progress), 20)
         self.assertGreaterEqual(len(student_followups), 5)
         self.assertGreaterEqual(len(neural_milestones), 7)
+        self.assertGreaterEqual(len(training_attempts), 30)
         self.assertGreaterEqual(
             {row["outcome"] for row in decisions},
             {"rejected", "correctness_fix"},
         )
         self.assertTrue(all(int(row["nodes"]) in {2, 3} for row in distributed))
+
+    def test_training_attempts_include_major_routes(self) -> None:
+        with (ROOT / "research" / "training_attempts.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            rows = list(csv.DictReader(handle))
+        routes = {row["route"] for row in rows}
+        self.assertIn("v20 portfolio search", routes)
+        self.assertIn("V42 belief-PUCT night H2H", routes)
+        self.assertIn("V45 outcome-oracle teacher", routes)
+        self.assertIn("V46 public belief distillation", routes)
+        self.assertTrue(
+            any(row["outcome"] == "rejected" for row in rows),
+            "ledger should include rejected attempts, not only successes",
+        )
 
     def test_recent_v45_progress_summaries_match_public_doc(self) -> None:
         with (ROOT / "research" / "v45_teacher_progress.csv").open(
@@ -112,7 +132,7 @@ class ResearchSnapshotTests(unittest.TestCase):
         architectures = describe_architectures()
         milestones = describe_training_milestones()
         self.assertGreaterEqual(len(architectures), 3)
-        self.assertGreaterEqual(len(milestones), 7)
+        self.assertGreaterEqual(len(milestones), 12)
         names = {item["name"] for item in architectures}
         self.assertIn("public_policy_value_candidate_scorer", names)
         self.assertIn("full_info_outcome_oracle_teacher", names)
@@ -130,11 +150,13 @@ class ResearchSnapshotTests(unittest.TestCase):
             ROOT / "docs" / "DISTRIBUTED_RESEARCH.md",
             ROOT / "docs" / "RECENT_PROGRESS_2026_06.md",
             ROOT / "docs" / "NEURAL_ARCHITECTURE.md",
+            ROOT / "docs" / "TRAINING_JOURNEY.md",
             ROOT / "research" / "experiment_decisions.csv",
             ROOT / "research" / "distributed_runs.csv",
             ROOT / "research" / "v45_teacher_progress.csv",
             ROOT / "research" / "v45_student_followups.csv",
             ROOT / "research" / "neural_training_milestones.csv",
+            ROOT / "research" / "training_attempts.csv",
             ROOT / "examples" / "training" / "README.md",
             ROOT / "examples" / "training" / "policy_value_records.jsonl",
         ]
