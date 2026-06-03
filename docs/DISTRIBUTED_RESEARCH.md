@@ -29,6 +29,7 @@ independent environment check is part of the experiment.
 | 2026-05-16 | Belief-search stability smoke | 3 | 960 games and 52,352 search decisions | Completed without crashes. This established stability, not strength. |
 | 2026-05-17 | Belief-search night evaluation | 3 | 5,400 games and 236,802 decision-trace rows | The candidate lost its strength gates, but the traces became useful mining data. |
 | 2026-05-17 | Concurrent trace and counterfactual collection | 3 | Parallel trace shards plus coordinator-side validation | Kept offline-only. The orchestration was useful for diagnostics without affecting runtime defaults. |
+| 2026-06-01 | V45 consensus-veto teacher holdout | 3 | 176 paired swapped-seat games | Candidate reached 143/176 overall but failed per-opponent targets. It stayed research-only and guided follow-up repair. |
 
 The night evaluation compared the belief-search candidate with three retained
 opponents. Its win rates were 0.423, 0.432, and 0.408. Publishing a negative

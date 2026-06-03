@@ -1,0 +1,21 @@
+date,stage,opponent,wins,games,win_rate,decision,notes
+2026-06-01,three_node_consensus_veto,v5,40,44,0.9091,continue,overall crossed 80 percent but v6 and v18 were below the per-opponent target
+2026-06-01,three_node_consensus_veto,v6,35,44,0.7955,continue,below per-opponent target
+2026-06-01,three_node_consensus_veto,v7,36,44,0.8182,continue,above target
+2026-06-01,three_node_consensus_veto,v18,32,44,0.7273,continue,below per-opponent target
+2026-06-01,three_node_consensus_veto,total,143,176,0.8125,continue,aggregate evidence useful but not enough for student training
+2026-06-02,cap16_retention,v5,22,28,0.7857,continue,v5 remained slightly below target
+2026-06-02,cap16_retention,v6,25,28,0.8929,continue,no regression versus prior cap
+2026-06-02,cap16_retention,v7,25,28,0.8929,continue,no regression versus prior cap
+2026-06-02,cap16_retention,v18,23,28,0.8214,continue,no regression versus prior cap
+2026-06-02,cap16_retention,total,95,112,0.8482,retain_offline_config,retained as offline research config but not ready for student training
+2026-06-02,remain80_gate,v5,30,36,0.8333,continue,remaining-card eligibility improved v5
+2026-06-02,remain80_gate,v6,28,36,0.7778,continue,v6 remained blocker
+2026-06-02,remain80_gate,v7,32,36,0.8889,continue,strong retained result
+2026-06-02,remain80_gate,v18,29,36,0.8056,continue,cleared target narrowly
+2026-06-02,remain80_gate,total,119,144,0.8264,retain_offline_config,no cumulative opponent regression versus remain60
+2026-06-02,targeted_pass_refine_sweep57,v5,41,44,0.9318,cleared_research_target,teacher ready for policy-only student data preparation
+2026-06-02,targeted_pass_refine_sweep57,v6,50,60,0.8333,cleared_research_target,v6-focused expansion repaired prior blocker
+2026-06-02,targeted_pass_refine_sweep57,v7,37,44,0.8409,cleared_research_target,above target
+2026-06-02,targeted_pass_refine_sweep57,v18,38,44,0.8636,cleared_research_target,above target
+2026-06-02,targeted_pass_refine_sweep57,total,166,192,0.8646,prepare_student_data,offline full-information teacher only

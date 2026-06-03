@@ -4,3 +4,4 @@ date,area,nodes,scale,outcome,lesson
 2026-05-16,belief-search stability smoke,3,960 games and 52352 search decisions,Completed without crashes,Stability evidence is not a strength result.
 2026-05-17,belief-search night trace collection,3,5400 games and 236802 decision traces,Trace mining succeeded but strength gates failed,Distributed evaluation can produce useful failure data even when a model is rejected.
 2026-05-17,trace and counterfactual collection,3,Concurrent trace shards plus coordinator-side validation,Offline diagnostic collection,Reserve all-node orchestration for shardable workloads.
+2026-06-01,V45 consensus-veto teacher holdout,3,176 paired swapped-seat games,Candidate reached 143/176 overall but missed per-opponent targets,Use distributed holdouts to expose weak opponent styles before student training.

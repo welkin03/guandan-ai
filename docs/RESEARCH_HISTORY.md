@@ -79,6 +79,24 @@ action pruning and misleading rollout-cap behavior. It remains offline
 research: full-information teachers are not fair live opponents and are not
 published as runtime defaults.
 
+### June 1-3: Outcome-oracle teacher and student checks
+
+The V45 route continued with outcome-gated full-information search. A
+three-computer June 1 holdout crossed 80% overall but still failed per-opponent
+targets, so it remained research-only. Follow-up June 2 sweeps retained a
+bounded outcome-oracle teacher with targeted ambiguous-pass refinement. The
+teacher reached 166/192 paired swapped-seat wins across v5/v6/v7/v18 and became
+eligible for policy-only student-data preparation.
+
+June 2 also added semantics-preserving rule and hand-evaluation optimizations:
+106 tests passed, 2,880 random small hands matched the legacy recursion, and
+5,445 retained states reproduced the same legal-action sets.
+
+On June 3, a policy-only student fit the teacher package better offline, but
+fresh gameplay checks were mixed. It remains a valid offline distillation
+artifact, not a retained gameplay checkpoint or runtime default. See
+[`docs/RECENT_PROGRESS_2026_06.md`](RECENT_PROGRESS_2026_06.md).
+
 ## Public Data
 
 The [research archive](../research/README.md) publishes a compact, sanitized
@@ -92,6 +110,10 @@ The public archive also includes a selected
 ledgers live in
 [`research/experiment_decisions.csv`](../research/experiment_decisions.csv)
 and [`research/distributed_runs.csv`](../research/distributed_runs.csv).
+The June 2026 update adds
+[`research/v45_teacher_progress.csv`](../research/v45_teacher_progress.csv)
+and
+[`research/v45_student_followups.csv`](../research/v45_student_followups.csv).
 
 ## Release Philosophy
 

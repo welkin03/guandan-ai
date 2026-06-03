@@ -56,21 +56,57 @@ class ResearchSnapshotTests(unittest.TestCase):
             encoding="utf-8", newline=""
         ) as handle:
             distributed = list(csv.DictReader(handle))
+        with (ROOT / "research" / "v45_teacher_progress.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            teacher_progress = list(csv.DictReader(handle))
+        with (ROOT / "research" / "v45_student_followups.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            student_followups = list(csv.DictReader(handle))
 
         self.assertGreaterEqual(len(decisions), 10)
-        self.assertGreaterEqual(len(distributed), 5)
+        self.assertGreaterEqual(len(distributed), 6)
+        self.assertGreaterEqual(len(teacher_progress), 20)
+        self.assertGreaterEqual(len(student_followups), 5)
         self.assertGreaterEqual(
             {row["outcome"] for row in decisions},
             {"rejected", "correctness_fix"},
         )
         self.assertTrue(all(int(row["nodes"]) in {2, 3} for row in distributed))
 
+    def test_recent_v45_progress_summaries_match_public_doc(self) -> None:
+        with (ROOT / "research" / "v45_teacher_progress.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            rows = list(csv.DictReader(handle))
+        total = next(
+            row
+            for row in rows
+            if row["stage"] == "targeted_pass_refine_sweep57"
+            and row["opponent"] == "total"
+        )
+        self.assertEqual(int(total["wins"]), 166)
+        self.assertEqual(int(total["games"]), 192)
+        self.assertAlmostEqual(float(total["win_rate"]), 0.8646, places=4)
+
+        with (ROOT / "research" / "v45_student_followups.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            followups = list(csv.DictReader(handle))
+        decisions = {row["decision"] for row in followups}
+        self.assertIn("valid_offline_distillation_artifact", decisions)
+        self.assertIn("reject_expansion_cross_opponent_veto", decisions)
+
     def test_public_research_narrative_is_anonymized(self) -> None:
         paths = [
             ROOT / "docs" / "ENGINEERING_LESSONS.md",
             ROOT / "docs" / "DISTRIBUTED_RESEARCH.md",
+            ROOT / "docs" / "RECENT_PROGRESS_2026_06.md",
             ROOT / "research" / "experiment_decisions.csv",
             ROOT / "research" / "distributed_runs.csv",
+            ROOT / "research" / "v45_teacher_progress.csv",
+            ROOT / "research" / "v45_student_followups.csv",
         ]
         text = "\n".join(path.read_text(encoding="utf-8") for path in paths)
 

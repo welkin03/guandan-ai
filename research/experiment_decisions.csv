@@ -13,3 +13,7 @@ date,area,attempt,outcome,evidence,lesson
 2026-05-31,search,all-legal root implementation,correctness_fix,Removing an accidental root top-28 cap changed one paired smoke gate from 3/6 to 6/6,Root and internal-node width controls need separate semantics.
 2026-05-31,labels,exact tie handling,correctness_fix,Three apparent changed labels became 3 stable / 0 changed after tie repair,Do not manufacture labels from exact ties.
 2026-05-31,search,global q-based root decision,rejected,Cross-opponent regressions appeared in larger paired gates,Use q-conflict rows for mining rather than global replacement.
+2026-06-01,search,three-node consensus-veto holdout,diagnostic_only,143/176 overall but v6 and v18 stayed below the per-opponent target,Overall strength is not enough without opponent-style coverage.
+2026-06-02,search,targeted outcome-oracle teacher,retained_offline_config,166/192 paired swapped-seat wins across v5/v6/v7/v18,Prepare policy-only student data but keep teacher offline.
+2026-06-02,optimization,semantics-preserving rule and hand-eval cache,correctness_fix,106 tests plus 2880 hand-equivalence and 5445 legal-action regression checks passed,Speedups must preserve concrete legal-action behavior.
+2026-06-03,training,policy-only outcome-oracle student,rejected_runtime,Offline top1 improved but direct and oracle-baseline gameplay checks had opponent regressions,Better teacher-label fit is not a release signal.
