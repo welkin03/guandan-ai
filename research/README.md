@@ -14,6 +14,8 @@ pre-public evaluation history.
 - `v45_teacher_progress.csv`: June 2026 outcome-oracle teacher milestones.
 - `v45_student_followups.csv`: June 2026 optimization, export, and student
   follow-up checks.
+- `neural_training_milestones.csv`: sanitized public ledger of the policy/value,
+  full-information teacher, and student-distillation route.
 
 The snapshot contains 1,280 game rows from April 28-29, 2026. It covers direct
 policy comparisons and two early public-information search gates.

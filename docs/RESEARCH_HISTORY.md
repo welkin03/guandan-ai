@@ -114,6 +114,9 @@ The June 2026 update adds
 [`research/v45_teacher_progress.csv`](../research/v45_teacher_progress.csv)
 and
 [`research/v45_student_followups.csv`](../research/v45_student_followups.csv).
+The learning architecture and neural-training route are summarized in
+[`docs/NEURAL_ARCHITECTURE.md`](NEURAL_ARCHITECTURE.md) and
+[`research/neural_training_milestones.csv`](../research/neural_training_milestones.csv).
 
 ## Release Philosophy
 

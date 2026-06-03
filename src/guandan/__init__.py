@@ -2,6 +2,7 @@
 
 from .cards import Card, Rank, Suit, full_deck, parse_card, parse_cards
 from .deal import deal, sample_hidden_hands
+from .learning import describe_architectures, describe_training_milestones, validate_policy_value_record
 from .policy import heuristic_policy
 from .replay import REPLAY_SCHEMA_VERSION, action_record, public_state_record, replay_record, turn_record
 from .rules import (
@@ -30,6 +31,8 @@ __all__ = [
     "can_play_over",
     "classify",
     "deal",
+    "describe_architectures",
+    "describe_training_milestones",
     "action_record",
     "full_deck",
     "generate_actions",
@@ -41,4 +44,5 @@ __all__ = [
     "parse_card",
     "parse_cards",
     "sample_hidden_hands",
+    "validate_policy_value_record",
 ]

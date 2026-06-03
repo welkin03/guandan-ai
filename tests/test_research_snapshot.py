@@ -7,6 +7,11 @@ import unittest
 from pathlib import Path
 
 from tools.summarize_gate_csv import expand_paths, summarize_gate
+from guandan.learning import (
+    describe_architectures,
+    describe_training_milestones,
+    validate_policy_value_record,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -64,11 +69,16 @@ class ResearchSnapshotTests(unittest.TestCase):
             encoding="utf-8", newline=""
         ) as handle:
             student_followups = list(csv.DictReader(handle))
+        with (ROOT / "research" / "neural_training_milestones.csv").open(
+            encoding="utf-8", newline=""
+        ) as handle:
+            neural_milestones = list(csv.DictReader(handle))
 
         self.assertGreaterEqual(len(decisions), 10)
         self.assertGreaterEqual(len(distributed), 6)
         self.assertGreaterEqual(len(teacher_progress), 20)
         self.assertGreaterEqual(len(student_followups), 5)
+        self.assertGreaterEqual(len(neural_milestones), 7)
         self.assertGreaterEqual(
             {row["outcome"] for row in decisions},
             {"rejected", "correctness_fix"},
@@ -98,15 +108,35 @@ class ResearchSnapshotTests(unittest.TestCase):
         self.assertIn("valid_offline_distillation_artifact", decisions)
         self.assertIn("reject_expansion_cross_opponent_veto", decisions)
 
+    def test_learning_architecture_metadata_and_examples(self) -> None:
+        architectures = describe_architectures()
+        milestones = describe_training_milestones()
+        self.assertGreaterEqual(len(architectures), 3)
+        self.assertGreaterEqual(len(milestones), 7)
+        names = {item["name"] for item in architectures}
+        self.assertIn("public_policy_value_candidate_scorer", names)
+        self.assertIn("full_info_outcome_oracle_teacher", names)
+
+        records_path = ROOT / "examples" / "training" / "policy_value_records.jsonl"
+        with records_path.open(encoding="utf-8") as handle:
+            records = [json.loads(line) for line in handle if line.strip()]
+        self.assertEqual(len(records), 2)
+        for record in records:
+            self.assertEqual(validate_policy_value_record(record), [])
+
     def test_public_research_narrative_is_anonymized(self) -> None:
         paths = [
             ROOT / "docs" / "ENGINEERING_LESSONS.md",
             ROOT / "docs" / "DISTRIBUTED_RESEARCH.md",
             ROOT / "docs" / "RECENT_PROGRESS_2026_06.md",
+            ROOT / "docs" / "NEURAL_ARCHITECTURE.md",
             ROOT / "research" / "experiment_decisions.csv",
             ROOT / "research" / "distributed_runs.csv",
             ROOT / "research" / "v45_teacher_progress.csv",
             ROOT / "research" / "v45_student_followups.csv",
+            ROOT / "research" / "neural_training_milestones.csv",
+            ROOT / "examples" / "training" / "README.md",
+            ROOT / "examples" / "training" / "policy_value_records.jsonl",
         ]
         text = "\n".join(path.read_text(encoding="utf-8") for path in paths)
 

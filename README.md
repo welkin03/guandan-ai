@@ -14,6 +14,12 @@ on its own for rules experiments, baseline agents, and reproducible AI
 prototyping. Large training datasets, model checkpoints, private battle logs, and
 machine-specific configuration are intentionally excluded.
 
+The repository also exposes a sanitized learning track: candidate-action
+policy/value architecture metadata, synthetic training-record examples, and
+milestone ledgers for the policy/value, full-information teacher, and student
+distillation routes. See
+[docs/NEURAL_ARCHITECTURE.md](docs/NEURAL_ARCHITECTURE.md).
+
 The public snapshot also includes a sanitized research archive: selected
 paired-gate records from the pre-public development history, aggregate results,
 and shareable replay examples. See [docs/RESEARCH_HISTORY.md](docs/RESEARCH_HISTORY.md)
@@ -47,6 +53,8 @@ AI without requiring a large framework.
 - Legal response generation and action comparison.
 - Four-player game state transitions, finishing order, and partnership score.
 - A lightweight heuristic policy with tactical safety guards.
+- Public neural-learning architecture metadata and training-record schema
+  examples.
 - A deterministic self-play demo and unit tests.
 
 ## Quick Start
@@ -61,6 +69,7 @@ python -m unittest discover -s tests -v
 python tools/play_demo.py --seed 21
 python tools/play_demo.py --seed 21 --trace demo.json
 python tools/summarize_gate_csv.py research/gates/*.csv
+python tools/inspect_learning_schema.py
 ```
 
 Use the library directly:
